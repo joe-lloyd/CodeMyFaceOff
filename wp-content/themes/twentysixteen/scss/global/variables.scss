@@ -1,0 +1,20 @@
+$white: #fff;
+$grey_slate: #1B1B1B;
+$grey_light: #2A2A2A;
+$blue: #3A8BC2;
+
+/* BREAKPOINTS */
+
+$screen-sizes: (
+	ipad: 768px,
+	desktop: 1025px
+);
+
+
+@mixin respond($media) {
+
+	@media only screen and (min-width: (map-get($screen-sizes, $media))) {
+		@content;
+	}
+
+}
