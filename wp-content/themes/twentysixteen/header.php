@@ -51,7 +51,7 @@
 								<div class="burger-menu burger-menu-bottom"></div>
 							</div>
 
-							<nav id="mobile-site-navigation" class="mobile-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twentysixteen' ); ?>">
+							<nav id="mobile-site-navigation" data-status="closed" class="mobile-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twentysixteen' ); ?>">
 								<?php
 									wp_nav_menu( array(
 										'theme_location' => 'primary',

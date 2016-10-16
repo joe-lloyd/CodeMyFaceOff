@@ -4,8 +4,13 @@
 //noinspection CssUnknownTarget
 @import "bourbon";
 
+@import "prism";
+@import "prism-okaidia";
+
 @import "bootstrap";
 
 @import "./global/*.scss";
+
+@import "./pages/*.scss";
 
 @import "./components/*.scss";

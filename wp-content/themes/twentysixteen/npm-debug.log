@@ -6,11 +6,11 @@
 2 info using npm@2.15.8
 3 info using node@v4.4.7
 4 verbose run-script [ 'pregulp', 'gulp', 'postgulp' ]
-5 info pregulp twentysixteen@1.0.94
-6 info gulp twentysixteen@1.0.94
+5 info pregulp twentysixteen@1.0.142
+6 info gulp twentysixteen@1.0.142
 7 verbose unsafe-perm in lifecycle true
-8 info twentysixteen@1.0.94 Failed to exec gulp script
-9 verbose stack Error: twentysixteen@1.0.94 gulp: `gulp css:watch`
+8 info twentysixteen@1.0.142 Failed to exec gulp script
+9 verbose stack Error: twentysixteen@1.0.142 gulp: `gulp css:watch`
 9 verbose stack Exit status 1
 9 verbose stack     at EventEmitter.<anonymous> (C:\Users\joe\AppData\Roaming\nvm\v4.4.7\node_modules\npm\lib\utils\lifecycle.js:217:16)
 9 verbose stack     at emitTwo (events.js:87:13)
@@ -20,16 +20,16 @@
 9 verbose stack     at ChildProcess.emit (events.js:172:7)
 9 verbose stack     at maybeClose (internal/child_process.js:827:16)
 9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-10 verbose pkgid twentysixteen@1.0.94
+10 verbose pkgid twentysixteen@1.0.142
 11 verbose cwd C:\wamp\www\my-site\wordpress\wp-content\themes\twentysixteen
-12 error Windows_NT 10.0.10586
+12 error Windows_NT 10.0.14393
 13 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run-script" "gulp"
 14 error node v4.4.7
 15 error npm  v2.15.8
 16 error code ELIFECYCLE
-17 error twentysixteen@1.0.94 gulp: `gulp css:watch`
+17 error twentysixteen@1.0.142 gulp: `gulp css:watch`
 17 error Exit status 1
-18 error Failed at the twentysixteen@1.0.94 gulp script 'gulp css:watch'.
+18 error Failed at the twentysixteen@1.0.142 gulp script 'gulp css:watch'.
 18 error This is most likely a problem with the twentysixteen package,
 18 error not with npm itself.
 18 error Tell the author that this fails on your system:

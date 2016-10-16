@@ -256,7 +256,9 @@
 		$json_a = json_decode($string, true);
 		$version = $json_a['version'];
 		wp_enqueue_style('style', get_template_directory_uri() . '/dist/base.css', array(), $version);
+//		wp_enqueue_style('prismcss', get_template_directory_uri() . '/node_modules/prismjs/themes/prism.css', array(), $version);
 		wp_enqueue_script('vender', get_template_directory_uri() . '/dist/vendor.bundle.js', array(), $version);
+		wp_enqueue_script('prismjs', get_template_directory_uri() . '/node_modules/prismjs/prism.js', array(), $version);
 		wp_enqueue_script('bundle', get_template_directory_uri() . '/dist/bundle.js', array(), $version);
 	}
 

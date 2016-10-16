@@ -3,16 +3,27 @@ header {
 	display: block;
 	position: fixed;
 	width: 100%;
+	padding: 0 15px;
 
 	.site-header-main {
 		display: block;
 		margin: auto;
 		max-width: 1000px;
+		position: relative;
 	}
 
 	.site-branding {
 		float: left;
 		color: white;
+
+		h1 {
+			font-size: 20px;
+			margin: 20px 0;
+
+			@include respond (ipad) {
+				font-size: 36px;
+			}
+		}
 	}
 
 	nav#desktop-site-navigation {
@@ -50,23 +61,76 @@ header {
 	}
 
 	nav#mobile-site-navigation {
+		@include transition(0.4s ease-in-out);
+		background-color: $grey_slate;
 		display: inline-block;
 		position: absolute;
-		top: 0;
+		padding: 0 50px;
+		height: 100vh;
+		box-sizing: border-box;
+		top: 62px;
 
-		@include respond (desktop) {
-			display: none;
-			float: right;
+		@include respond (ipad) {
+			top: 79px;
 		}
 
+		&:after {
+			content: " ";
+			position: absolute;
+			right: 0;
+			width: 1000px;
+			height: 100vh;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			background-color: $grey_slate;
+		}
+
+		&[data-status="closed"] {
+			right: -200px;
+			opacity: 0;
+		}
+
+		&[data-status="open"] {
+			right: 0;
+			opacity: 1;
+		}
+
+		@include respond (desktop) {
+			//display: none;
+			//float: right;
+		}
+
+		ul {
+			padding: 0;
+			list-style: none;
+			@include calc(padding-top, "50vh - 200px");
+
+			li {
+				padding: 10px 15px;
+			}
+
+			a {
+				color: $white;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
 	}
 
 	.burger-wrap {
 		position: relative;
-		height: 88px;
-		width: 100px;
+		height: 30px;
+		width: 50px;
 		float: right;
 		cursor: pointer;
+		margin-top: 16px;
+
+		@include respond (ipad) {
+			margin-top: 24px;
+		}
 
 		@include respond (desktop) {
 			//display: none;
@@ -78,19 +142,19 @@ header {
 			position: absolute;
 			width: 50px;
 			height: 2px;
-			left: 0;
+			right: 0;
 
 			&-top {
-				top: 30px;
+				top: 0;
 			}
 
 			&-middle {
-				top: 43px;
+				top: 14px;
 				@include transition(0.2s ease-in-out 0.2s);
 			}
 
 			&-bottom {
-				bottom: 30px;
+				bottom: 1px;
 			}
 
 		}

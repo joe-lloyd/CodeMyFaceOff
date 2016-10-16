@@ -42,7 +42,8 @@ gulp.task("css", () => {
 			includePaths: [
 				"./node_modules/normalize-scss/sass/",
 				"./node_modules/bootstrap-sass/assets/stylesheets/",
-				"./node_modules/bourbon/app/assets/stylesheets/"
+				"./node_modules/bourbon/app/assets/stylesheets/",
+				"./node_modules/prismjs/themes/"
 			]
 		}))
 		.pipe(sourcemaps.write())

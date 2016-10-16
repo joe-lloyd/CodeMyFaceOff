@@ -6,6 +6,7 @@ export default class MenuModule {
 	constructor () {
 
 		this.burgerWrap = document.querySelector(".burger-wrap");
+		this.mobileMenu = document.querySelector("#mobile-site-navigation");
 
 		this.add_event_listeners();
 	}
@@ -21,5 +22,6 @@ export default class MenuModule {
 	change_menu_state () {
 		let initState = this.burgerWrap.dataset.status;
 		this.burgerWrap.dataset.status = initState === "closed" || initState === "init" ? "open" : "closed";
+		this.mobileMenu.dataset.status = this.burgerWrap.dataset.status === "open" ? "open" : "closed"
 	}
 }

@@ -1,15 +1,14 @@
 <?php
 	/**
 	 * Template Name: Home
+	 *
 	 */
 	get_header();
 ?>
 
-	<main>
+	<main class="home-page">
 
-		<section class="about section">
-
-		</section>
+		<?php include 'partials/home/about.php'?>
 
 		<section class="posts section">
 

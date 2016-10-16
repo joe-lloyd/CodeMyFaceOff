@@ -1,0 +1,11 @@
+.section {
+	background-color: $white;
+	min-height: 100vh;
+	box-sizing: border-box;
+	padding: 88px 15px 30px;
+
+	&:nth-child(odd) {
+		background-color: rgba($grey_light, 0.2);
+	}
+}
+

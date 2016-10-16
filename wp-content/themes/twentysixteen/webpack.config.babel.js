@@ -5,7 +5,7 @@ import Bump from "bump-webpack-plugin";
 module.exports = {
 	entry: {
 		app: "./es/entry.js",
-		vendor: ["jquery"]
+		vendor: ["jquery", "prismjs"]
 	},
 	output: {
 		path: "./dist",
