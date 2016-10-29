@@ -4,6 +4,7 @@ header {
 	position: fixed;
 	width: 100%;
 	padding: 0 15px;
+	z-index: 10;
 
 	.site-header-main {
 		display: block;
@@ -86,12 +87,12 @@ header {
 			background-color: $grey_slate;
 		}
 
-		&[data-status="closed"] {
+		&[data-menu-status="closed"] {
 			right: -200px;
 			opacity: 0;
 		}
 
-		&[data-status="open"] {
+		&[data-menu-status="open"] {
 			right: 0;
 			opacity: 1;
 		}
@@ -159,7 +160,7 @@ header {
 
 		}
 
-		&[data-status="open"] {
+		&[data-menu-button-status="open"] {
 
 			.burger-menu {
 
@@ -179,7 +180,7 @@ header {
 			}
 		}
 
-		&[data-status="closed"] {
+		&[data-menu-button-status="closed"] {
 
 			.burger-menu {
 

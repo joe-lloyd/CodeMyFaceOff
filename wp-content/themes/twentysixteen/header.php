@@ -45,13 +45,13 @@
 								?>
 							</nav><!-- .main-navigation -->
 
-							<div class="burger-wrap" data-status="init">
+							<div class="burger-wrap" data-menu-button-status="init">
 								<div class="burger-menu burger-menu-top"></div>
 								<div class="burger-menu burger-menu-middle"></div>
 								<div class="burger-menu burger-menu-bottom"></div>
 							</div>
 
-							<nav id="mobile-site-navigation" data-status="closed" class="mobile-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twentysixteen' ); ?>">
+							<nav id="mobile-site-navigation" data-menu-status="closed" class="mobile-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twentysixteen' ); ?>">
 								<?php
 									wp_nav_menu( array(
 										'theme_location' => 'primary',

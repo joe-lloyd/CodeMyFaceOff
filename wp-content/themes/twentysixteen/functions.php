@@ -32,6 +32,17 @@
 		require get_template_directory() . '/inc/back-compat.php';
 	}
 
+	/**
+	 * Custom files components
+	 */
+	require_once( get_template_directory() . '/components/blogcard/blogcard.php');
+
+	/**
+	 * Custom image sizes
+	 */
+	add_image_size("blogcard", 380, 285, true);
+
+
 	if (!function_exists('twentysixteen_setup')) :
 		/**
 		 * Sets up theme defaults and registers support for various WordPress features.

@@ -10,9 +10,7 @@
 
 		<?php include 'partials/home/about.php'?>
 
-		<section class="posts section">
-
-		</section>
+		<?php include 'partials/home/posts.php'?>
 
 		<section class="tech section">
 
